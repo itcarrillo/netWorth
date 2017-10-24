@@ -1,0 +1,12 @@
+<p>Welcome to {{title}}</p>
+
+<form method="GET">
+Your net worth: <input type="text" name="myNetWorth" value="{{query.vars.myNetWorth}}">
+Other person's net worth: <input type="text" name="otherNetWorth" value="{{query.vars.otherNetWorth}}">
+Price of good: <input type="text" name="price" value="{{query.vars.price}}">
+<input type="submit" name="" value="Calculate">
+</form>
+
+{{#if query.vars.price}}
+	{{query.result}}
+{{/if}}
